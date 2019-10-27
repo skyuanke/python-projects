@@ -1,0 +1,6 @@
+
+#创建映射表，将字符“abcdef123"一一对应地转换为"uvwxyz@#$"
+table=''.maketrans('abcdef123','uvwxyz@#$')
+s="Python is a great proramming language. I like it!"
+#按映射表进行替换
+s.translate(table)
