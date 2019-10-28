@@ -3,7 +3,7 @@
         lower=string.ascii_lowercase       #小写字母
         upper=string.ascii_uppercase       #大写字母
         before=string.ascii_letters
-        after=lower[k:]+lower[:k]=upper[k:]+upper[:k]
+        after=lower[k:]+lower[:k]+upper[k:]+upper[:k]
         table=''.maketrans(before,after)   #创建映射表
         return s.translate(table)
     
