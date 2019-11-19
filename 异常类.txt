@@ -1,0 +1,63 @@
+BaseException             所有异常的基类         
+     1SystemExit              解释器请求退出
+     2KeyboardInterrupt          用户中断执行(通常是输入^C)
+     3GeneratorExit            生成器(generator)发生异常来通知退出
+     4Exception               常规错误的基类
+          4.1StopIteration              迭代器没有更多值 
+          4.2StopAsyncIteration              必须通过异步迭代器对象的__anext__()方法引发以停止迭代
+          4.3ArithmeticError                 所有数值计算错误的基类
+               4.3.1FloatingPointError             浮点计算错误
+               4.3.2OverflowError                  数值运算超出最大限制
+               4.3.3ZeroDivisionError              除(或取模)零 (所有数据类型
+          4.4AssertionError                  断言语句失败
+          4.5AttributeError                  对象没有这个属性
+          4.6BufferError                    与缓冲区相关的操作时引发
+          4.7EOFError                        没有内建输入,到达EOF 标记
+          4.8ImportError                     导入失败
+          4.9LookupError                     无效数据查询的基类
+               4.9.1IndexError                      序列中没有此索引(index)
+               4.9.2KeyError                        映射中没有这个键
+          4.10MemoryError                     内存溢出错误
+          4.11NameError                       未声明、初始化对象
+               4.11.1UnboundLocalError              访问未初始化的本地变量
+          4.12OSError                         操作系统错误，
+               4.12.1BlockingIOError               操作将阻塞对象设置为非阻塞操作
+               4.12.2ChildProcessError             子进程上的操作失败
+               4.12.3ConnectionError               与连接相关的异常的基类
+                    4.12.3.1BrokenPipeError             在已关闭写入的套接字上写入
+                    4.12.3.2ConnectionAbortedError      连接尝试被对等方中止
+                    4.12.3.3ConnectionRefusedError      连接尝试被对等方拒绝
+                    4.12.3.4ConnectionResetError        连接由对等方重置
+               4.12.4FileExistsError               创建已存在的文件或目录
+               4.12.5FileNotFoundError             请求不存在的文件或目录
+               4.12.6InterruptedError              系统调用被输入信号中断
+               4.12.7IsADirectoryError             在目录上请求文件操作
+               4.12.8NotADirectoryError            在不是目录的事物上请求目录操作
+               4.12.9PermissionError              在没有访问权限的情况下运行操作
+               4.12.10ProcessLookupError            进程不存在
+               4.12.11TimeoutError                  系统函数在系统级别超时
+          4.13ReferenceError                弱引用试图访问已经垃圾回收了的对象
+          4.14RuntimeError                  一般的运行时错误
+               4.14.1NotImplementedError      尚未实现的方法
+               4.14.2RecursionError           解释器检测到超出最大递归深度
+          4.15SyntaxError                   Python 语法错误
+               4.15.1IndentationError         缩进错误
+               4.15.2TabError          Tab 和空格混用
+          4.16SystemError              一般的解释器系统错误
+          4.17TypeError               对类型无效的操作
+          4.18ValueError              传入无效的参数
+               4.18.1UnicodeError             Unicode 相关的错误
+                    4.18.1.1UnicodeDecodeError     Unicode 解码时的错误
+                    4.18.1.2UnicodeEncodeError     Unicode 编码时错误
+                    4.18.1.3UnicodeTranslateError  Unicode 转换时错误
+          4.19Warning                       警告的基类
+               4.19.1DeprecationWarning          关于被弃用的特征的警告
+               4.19.2PendingDeprecationWarning   关于构造将来语义会有改变的警告
+               4.19.3RuntimeWarning           可疑的运行行为的警告
+               4.19.4SyntaxWarning            可疑的语法的警告
+               4.19.5UserWarning              用户代码生成的警告
+               4.19.6FutureWarning            有关已弃用功能的警告的基类
+               4.19.7ImportWarning            模块导入时可能出错的警告的基类
+               4.19.8UnicodeWarning           与Unicode相关的警告的基类
+               4.19.9BytesWarning             bytes和bytearray相关的警告的基类
+               4.19.10ResourceWarning           与资源使用相关的警告的基类
